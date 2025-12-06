@@ -1,0 +1,7 @@
+{
+  "name": "sealclub-backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "mercadopago": "^1.5.17"
+  }
+}
