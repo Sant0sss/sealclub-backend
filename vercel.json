@@ -1,0 +1,49 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
+```
+
+4. Clique em **"Commit changes"**
+
+---
+
+### **PASSO 4: Deploy na Vercel**
+
+1. Acesse: https://vercel.com
+2. Clique em **"Sign Up"**
+3. Escolha **"Continue with GitHub"**
+4. Autorize a Vercel
+5. Clique em **"Import Project"**
+6. Selecione o repositório **"sealclub-backend"**
+7. Clique em **"Import"**
+
+---
+
+### **PASSO 5: Configurar Variáveis de Ambiente**
+
+1. Na Vercel, vá em **"Settings"** do projeto
+2. Clique em **"Environment Variables"**
+3. Adicione:
+   - **Name**: `MP_ACCESS_TOKEN`
+   - **Value**: `APP_USR-8142898236250404-111314-c666a7bc7b4a83767e3cb74bea87d183-2988147585`
+   - Clique em **"Add"**
+
+4. Adicione outra:
+   - **Name**: `WEBHOOK_URL`
+   - **Value**: (vai ser tipo `https://sealclub-backend.vercel.app`)
+   - Clique em **"Add"**
+
+5. Clique em **"Redeploy"** no topo
+
+---
+
+### **PASSO 6: Pegar a URL da API**
+
+Após o deploy, a Vercel vai te dar uma URL tipo:
+```
+https://sealclub-backend.vercel.app
